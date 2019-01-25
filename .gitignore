@@ -1,0 +1,9 @@
+*.log
+*.pdf
+*.fls
+*.fdb_latexmk
+*.dvi
+*.aux
+desktop.ini
+.DS_Store
+*.synctex.gz
