@@ -14,7 +14,8 @@
 
 \def\LastSentence{\newcount \numofpaper\numofpaper=\value{NumOfMembers}\multiply \numofpaper by \value{DocumentsPerMember}本書面を\漢数字{\numofpaper}通作成し、\AllMembers
 が、署名又は記名押印し、各\漢数字{\value{DocumentsPerMember}}通を保有する。}
-
+\def\LastSentenceElectricSign{電磁的記録である本書面を作成し、\AllMembers
+が、これに電子署名する。}
 
 \def\AllMembers{\setcounter{i}{0}\whiledo{\value{i}<\value{NumOfMembers}}{\addtocounter{i}{1}\setcounter{j}{\value{i}}\addtocounter{j}{1}\alias{\value{i}}\ifthenelse{\value{j}=\value{NumOfMembers}}{及び}{\ifthenelse{\value{j}<\value{NumOfMembers}}{、}{}}}}
 
